@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Button from '../UI/Button'
-import logo from '../assets/images/mk-logo.svg'
 import logoBlue from '../assets/images/mk-logo-blue.svg'
 import { BsPersonCircle } from "react-icons/bs";
 
