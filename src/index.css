@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'iranYekan';
+    src: local('iranYekan'), url(./assets/fonts/IRANYekanXFaNum-Regular.woff2) format('woff2');
+  }
+
+@layer base {
+  html {
+    font-family: 'iranYekan';
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e40af;
+    border-radius: 5px;
+  }
+
 }
